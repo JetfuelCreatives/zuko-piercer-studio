@@ -32,12 +32,12 @@
 
     --border: 0 0% 16%;
     --input: 0 0% 16%;
-    --ring: 43 74% 49%;
+    --ring: 0 0% 100%;
 
     --radius: 0.5rem;
 
-    --gold: 43 74% 49%;
-    --gold-light: 43 80% 65%;
+    --gold: 0 0% 100%;
+    --gold-light: 0 0% 85%;
     --charcoal: 0 0% 12%;
     --charcoal-light: 0 0% 18%;
 
