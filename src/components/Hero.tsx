@@ -1,53 +1,41 @@
-import { Star } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="Zuko Piercer Studio" className="w-full h-full object-cover" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-background/80" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-      </div>
-
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="flex items-center justify-center gap-1 mb-6 animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
-          {[...Array(5)].map((_, i) => (
-            <Star key={i} size={18} className={`${i < 5 ? "fill-primary text-primary" : "text-muted-foreground"}`} />
-          ))}
-          <span className="ml-2 text-sm text-muted-foreground">4.8 from 280+ reviews</span>
-        </div>
+      <div className="container mx-auto px-4 text-center">
+        <p className="text-xs font-bold tracking-[0.4em] uppercase text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          Hatfield · Pretoria · South Africa
+        </p>
 
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-heading font-black tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
-          Premium Tattoos &<br />
-          <span className="text-gold-gradient">Piercings in Pretoria</span>
+        <h1 className="text-5xl sm:text-7xl lg:text-[8rem] font-heading font-black tracking-tighter leading-[0.9] mb-8 animate-fade-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
+          ZUKO<br />PIERCER
         </h1>
 
-        <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.6s", opacity: 0 }}>
-          Hatfield's premier destination for custom tattoos, professional piercings, and premium jewellery.
+        <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-12 animate-fade-in" style={{ animationDelay: "0.6s", opacity: 0 }}>
+          Custom tattoos, professional piercings &amp; premium jewellery.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.8s", opacity: 0 }}>
           <a
             href="#booking"
-            className="bg-gold-gradient text-primary-foreground px-8 py-3.5 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity shadow-gold"
+            className="bg-foreground text-background px-10 py-4 text-xs font-bold tracking-[0.25em] uppercase hover:opacity-80 transition-opacity"
           >
-            Book Appointment
+            Book Now
           </a>
           <a
             href="#gallery"
-            className="border border-primary/40 text-foreground px-8 py-3.5 text-sm font-bold tracking-widest uppercase hover:bg-primary/10 transition-colors"
+            className="border border-border text-foreground px-10 py-4 text-xs font-bold tracking-[0.25em] uppercase hover:bg-muted transition-colors"
           >
-            View Work
+            Our Work
           </a>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-[1px] h-12 bg-gradient-to-b from-primary/60 to-transparent" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground">
+        <ArrowDown size={18} strokeWidth={1.5} />
       </div>
     </section>
   );
