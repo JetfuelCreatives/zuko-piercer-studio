@@ -46,7 +46,7 @@ const Services = () => (
                 width={800}
                 height={800}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
+              
             </div>
             <div className="p-6">
               <h3 className="text-xl font-heading font-bold mb-3">{s.title}</h3>
