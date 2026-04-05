@@ -1,94 +1,53 @@
-import { Star, ArrowRight } from "lucide-react";
+import { Star } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-end overflow-hidden">
-      {/* Background image — full bleed */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background */}
       <div className="absolute inset-0">
-        <img
-          src={heroBg}
-          alt="Zuko Piercer Studio"
-          className="w-full h-full object-cover"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-background/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+        <img src={heroBg} alt="Zuko Piercer Studio" className="w-full h-full object-cover" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
 
-      {/* Content — bottom-aligned, left-heavy layout */}
-      <div className="relative z-10 container mx-auto px-6 pb-20 pt-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-end">
-          {/* Left column */}
-          <div>
-            {/* Rating badge */}
-            <div
-              className="inline-flex items-center gap-1.5 border border-border bg-background/80 backdrop-blur-sm px-4 py-2 mb-8 animate-fade-in"
-              style={{ animationDelay: "0.2s", opacity: 0 }}
-            >
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} size={14} className="fill-foreground text-foreground" />
-              ))}
-              <span className="ml-1.5 text-xs font-medium tracking-wide text-muted-foreground uppercase">
-                4.8 · 280+ Reviews
-              </span>
-            </div>
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="flex items-center justify-center gap-1 mb-6 animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          {[...Array(5)].map((_, i) => (
+            <Star key={i} size={18} className={`${i < 5 ? "fill-primary text-primary" : "text-muted-foreground"}`} />
+          ))}
+          <span className="ml-2 text-sm text-muted-foreground">4.8 from 280+ reviews</span>
+        </div>
 
-            {/* Headline */}
-            <h1
-              className="text-5xl sm:text-6xl lg:text-8xl font-heading font-black tracking-tighter leading-[0.9] mb-6 animate-fade-in"
-              style={{ animationDelay: "0.4s", opacity: 0 }}
-            >
-              Premium
-              <br />
-              Tattoos &
-              <br />
-              <span className="text-muted-foreground">Piercings</span>
-            </h1>
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-heading font-black tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
+          Premium Tattoos &<br />
+          <span className="text-gold-gradient">Piercings in Pretoria</span>
+        </h1>
 
-            {/* Location tag */}
-            <p
-              className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground mb-10 animate-fade-in"
-              style={{ animationDelay: "0.5s", opacity: 0 }}
-            >
-              Hatfield · Pretoria · South Africa
-            </p>
-          </div>
+        <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.6s", opacity: 0 }}>
+          Hatfield's premier destination for custom tattoos, professional piercings, and premium jewellery.
+        </p>
 
-          {/* Right column */}
-          <div
-            className="flex flex-col gap-6 lg:pb-4 animate-fade-in"
-            style={{ animationDelay: "0.6s", opacity: 0 }}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.8s", opacity: 0 }}>
+          <a
+            href="#booking"
+            className="bg-gold-gradient text-primary-foreground px-8 py-3.5 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity shadow-gold"
           >
-            <p className="text-muted-foreground text-base max-w-md leading-relaxed">
-              Hatfield's premier destination for custom tattoos, professional
-              piercings, and premium jewellery. Bold work, clean lines,
-              unforgettable results.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="#booking"
-                className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity"
-              >
-                Book Now
-                <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-              </a>
-              <a
-                href="#gallery"
-                className="inline-flex items-center justify-center border border-border text-foreground px-8 py-4 text-sm font-bold tracking-widest uppercase hover:bg-accent transition-colors"
-              >
-                View Work
-              </a>
-            </div>
-          </div>
+            Book Appointment
+          </a>
+          <a
+            href="#gallery"
+            className="border border-primary/40 text-foreground px-8 py-3.5 text-sm font-bold tracking-widest uppercase hover:bg-primary/10 transition-colors"
+          >
+            View Work
+          </a>
         </div>
       </div>
 
-      {/* Vertical scroll line */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce z-10">
-        <div className="w-[1px] h-10 bg-gradient-to-b from-foreground/40 to-transparent" />
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-[1px] h-12 bg-gradient-to-b from-primary/60 to-transparent" />
       </div>
     </section>
   );
