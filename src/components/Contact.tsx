@@ -32,8 +32,10 @@ const Contact = () => (
             <Clock size={20} className="text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-heading font-semibold mb-1">Hours</h3>
-              <p className="text-sm text-muted-foreground">Mon–Sat: 9:00 AM – 6:00 PM</p>
-              <p className="text-sm text-muted-foreground">Sun: Closed</p>
+              <p className="text-sm text-muted-foreground">Sun: 9:00 AM – 3:00 PM</p>
+              <p className="text-sm text-muted-foreground">Mon–Thu: 9:00 AM – 6:00 PM</p>
+              <p className="text-sm text-muted-foreground">Fri: 9:00 AM – 6:00 PM</p>
+              <p className="text-sm text-muted-foreground">Sat: 9:00 AM – 5:00 PM</p>
             </div>
           </div>
 
