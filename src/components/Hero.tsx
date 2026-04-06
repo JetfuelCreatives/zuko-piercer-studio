@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.8s", opacity: 0 }}>
           <a
             href="#booking"
-            className="bg-foreground text-background px-10 py-4 text-xs font-bold tracking-[0.25em] uppercase hover:opacity-80 transition-opacity"
+            className="bg-foreground text-background px-10 py-4 text-xs font-bold tracking-[0.25em] uppercase hover:opacity-80 transition-opacity rounded-full"
           >
             Book Now
           </a>
