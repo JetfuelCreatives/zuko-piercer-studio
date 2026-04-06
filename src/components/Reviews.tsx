@@ -26,7 +26,7 @@ const Reviews = () => (
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {reviews.map((r) => (
-          <div key={r.name} className="bg-card border border-border p-6 hover:border-primary/20 transition-colors">
+          <div key={r.name} className="bg-card border border-border p-6 rounded-xl hover:border-primary/20 transition-colors">
             <div className="flex gap-0.5 mb-4">
               {[...Array(r.stars)].map((_, i) => (
                 <Star key={i} size={14} className="fill-primary text-primary" />
