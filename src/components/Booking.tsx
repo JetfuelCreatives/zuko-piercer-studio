@@ -33,7 +33,7 @@ const Booking = () => {
               type="text"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
-              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors rounded-full"
               placeholder="Your full name"
               maxLength={100}
             />
@@ -44,7 +44,7 @@ const Booking = () => {
               type="tel"
               value={form.phone}
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
-              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors rounded-full"
               placeholder="079 818 5184"
               maxLength={15}
             />
@@ -54,7 +54,7 @@ const Booking = () => {
             <select
               value={form.service}
               onChange={(e) => setForm({ ...form, service: e.target.value })}
-              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors rounded-full"
             >
               <option value="">Select a service</option>
               <option value="Custom Tattoo">Custom Tattoo</option>
@@ -69,12 +69,12 @@ const Booking = () => {
               type="date"
               value={form.date}
               onChange={(e) => setForm({ ...form, date: e.target.value })}
-              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors rounded-full"
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-gold-gradient text-primary-foreground py-3.5 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity shadow-gold"
+            className="w-full bg-gold-gradient text-primary-foreground py-3.5 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity shadow-gold rounded-full"
           >
             Book via WhatsApp
           </button>
