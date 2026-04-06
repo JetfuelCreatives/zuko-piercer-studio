@@ -26,7 +26,7 @@ const Hero = () => {
           </a>
           <a
             href="#gallery"
-            className="border border-border text-foreground px-10 py-4 text-xs font-bold tracking-[0.25em] uppercase hover:bg-muted transition-colors"
+            className="border border-border text-foreground px-10 py-4 text-xs font-bold tracking-[0.25em] uppercase hover:bg-muted transition-colors rounded-full"
           >
             Our Work
           </a>

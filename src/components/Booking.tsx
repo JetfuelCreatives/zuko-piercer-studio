@@ -74,7 +74,7 @@ const Booking = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-gold-gradient text-primary-foreground py-3.5 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity shadow-gold"
+            className="w-full bg-gold-gradient text-primary-foreground py-3.5 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity shadow-gold rounded-full"
           >
             Book via WhatsApp
           </button>

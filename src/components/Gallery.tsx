@@ -34,7 +34,7 @@ const Gallery = () => {
             <button
               key={f}
               onClick={() => setActive(f)}
-              className={`text-sm font-semibold tracking-wider uppercase px-5 py-2 transition-all duration-200 ${
+              className={`text-sm font-semibold tracking-wider uppercase px-5 py-2 transition-all duration-200 rounded-full ${
                 active === f
                   ? "bg-gold-gradient text-primary-foreground"
                   : "text-muted-foreground hover:text-foreground border border-border"
