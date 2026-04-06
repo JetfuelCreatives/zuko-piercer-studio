@@ -47,7 +47,7 @@ const Gallery = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {filtered.map((img, i) => (
-            <div key={i} className="group relative overflow-hidden aspect-square cursor-pointer">
+            <div key={i} className="group relative overflow-hidden aspect-square cursor-pointer rounded-xl">
               <img
                 src={img.src}
                 alt={img.alt}
