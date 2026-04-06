@@ -42,7 +42,7 @@ const Services = () => (
         <h2 className="text-3xl sm:text-4xl font-heading font-bold">Our Services</h2>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((s) => (
           <div key={s.title} className="group bg-card border border-border hover:border-primary/30 transition-all duration-300 overflow-hidden rounded-xl">
             <div className="relative overflow-hidden aspect-[4/3] rounded-t-xl">
