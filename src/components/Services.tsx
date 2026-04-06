@@ -25,6 +25,13 @@ const services = [
     details: ["Gold pieces", "Titanium options", "Surgical steel", "Custom orders"],
     price: "From R100",
   },
+  {
+    title: "Tattoo Removal",
+    desc: "Advanced laser tattoo removal for safe, effective fading and complete removal. Our trained professionals use the latest technology for optimal results.",
+    img: removalImg,
+    details: ["Laser removal", "Gradual fading", "All skin types", "Free assessment"],
+    price: "Contact for quote",
+  },
 ];
 
 const Services = () => (
