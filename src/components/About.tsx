@@ -20,7 +20,7 @@ const About = () => (
             width={800}
             height={800}
           />
-          <div className="absolute inset-0 border border-primary/20" />
+          
         </div>
 
         <div>
