@@ -45,7 +45,7 @@ const Navbar = () => {
           ))}
           <a
             href="#booking"
-            className="bg-gold-gradient text-primary-foreground px-5 py-2 text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition-opacity"
+            className="bg-gold-gradient text-primary-foreground px-5 py-2 text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition-opacity rounded-full"
           >
             Book Now
           </a>
