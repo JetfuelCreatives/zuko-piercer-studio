@@ -36,8 +36,8 @@ const Services = () => (
 
       <div className="grid md:grid-cols-3 gap-6">
         {services.map((s) => (
-          <div key={s.title} className="group bg-card border border-border hover:border-primary/30 transition-all duration-300 overflow-hidden">
-            <div className="relative overflow-hidden aspect-[4/3]">
+          <div key={s.title} className="group bg-card border border-border hover:border-primary/30 transition-all duration-300 overflow-hidden rounded-xl">
+            <div className="relative overflow-hidden aspect-[4/3] rounded-t-xl">
               <img
                 src={s.img}
                 alt={s.title}
