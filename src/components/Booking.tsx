@@ -54,7 +54,7 @@ const Booking = () => {
             <select
               value={form.service}
               onChange={(e) => setForm({ ...form, service: e.target.value })}
-              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-card border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors rounded-full"
             >
               <option value="">Select a service</option>
               <option value="Custom Tattoo">Custom Tattoo</option>
