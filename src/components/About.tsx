@@ -15,7 +15,7 @@ const About = () => (
           <img
             src={studioPhoto}
             alt="Zuko Piercer studio"
-            className="w-full aspect-[4/5] object-cover"
+            className="w-full aspect-[4/5] object-cover rounded-xl"
             loading="lazy"
             width={800}
             height={800}
