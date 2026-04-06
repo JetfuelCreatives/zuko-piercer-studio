@@ -78,7 +78,7 @@ const Navbar = () => {
             <a
               href="#booking"
               onClick={() => setOpen(false)}
-              className="bg-gold-gradient text-primary-foreground px-6 py-2.5 text-sm font-semibold tracking-wide uppercase"
+              className="bg-gold-gradient text-primary-foreground px-6 py-2.5 text-sm font-semibold tracking-wide uppercase rounded-full"
             >
               Book Now
             </a>
