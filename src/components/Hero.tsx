@@ -5,15 +5,17 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
       {/* Content */}
       <div className="container mx-auto px-4 text-center">
-        <p className="text-xs font-bold tracking-[0.4em] uppercase text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
+        <p className="text-xs font-bold tracking-[0.4em] uppercase text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
           Hatfield · Pretoria · South Africa
         </p>
 
-        <h1 className="text-5xl sm:text-7xl lg:text-[8rem] font-heading font-black tracking-tighter leading-[0.9] mb-8 animate-fade-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
-          ZUKO<br />PIERCER
+        <h1 className="text-5xl sm:text-7xl lg:text-[8rem] font-heading font-black tracking-tighter leading-[0.9] mb-8">
+          <span className="inline-block animate-slide-up" style={{ animationDelay: "0.5s", opacity: 0 }}>ZUKO</span>
+          <br />
+          <span className="inline-block animate-slide-up" style={{ animationDelay: "0.7s", opacity: 0 }}>PIERCER</span>
         </h1>
 
-        <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-12 animate-fade-in" style={{ animationDelay: "0.6s", opacity: 0 }}>
+        <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-12 animate-fade-in" style={{ animationDelay: "0.9s", opacity: 0 }}>
           Custom tattoos, professional piercings &amp; premium jewellery.
         </p>
 
