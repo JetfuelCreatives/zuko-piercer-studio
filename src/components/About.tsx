@@ -1,5 +1,5 @@
 import { Shield, Award, Sparkles } from "lucide-react";
-import tattooWork from "@/assets/tattoo-work.jpg";
+import studioPhoto from "@/assets/studio.jpg";
 
 const features = [
   { icon: Shield, title: "Sterile & Safe", desc: "Hospital-grade sterilization for every procedure" },
