@@ -13,8 +13,8 @@ const About = () => (
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <img
-            src={tattooWork}
-            alt="Tattoo artist at work"
+            src={studioPhoto}
+            alt="Zuko Piercer studio"
             className="w-full aspect-[4/5] object-cover"
             loading="lazy"
             width={800}
