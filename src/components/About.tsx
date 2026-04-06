@@ -1,5 +1,5 @@
 import { Shield, Award, Sparkles } from "lucide-react";
-import tattooWork from "@/assets/tattoo-work.jpg";
+import studioPhoto from "@/assets/studio.jpg";
 
 const features = [
   { icon: Shield, title: "Sterile & Safe", desc: "Hospital-grade sterilization for every procedure" },
@@ -13,8 +13,8 @@ const About = () => (
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <img
-            src={tattooWork}
-            alt="Tattoo artist at work"
+            src={studioPhoto}
+            alt="Zuko Piercer studio"
             className="w-full aspect-[4/5] object-cover"
             loading="lazy"
             width={800}
