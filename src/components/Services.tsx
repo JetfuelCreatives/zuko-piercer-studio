@@ -1,6 +1,7 @@
 import tattooImg from "@/assets/tattoo-work.jpg";
 import piercingImg from "@/assets/piercing-work.jpg";
 import jewelleryImg from "@/assets/jewellery.jpg";
+import removalImg from "@/assets/tattoo-removal.jpg";
 
 const services = [
   {
